@@ -1,0 +1,10 @@
+﻿- type: trait
+  id: CaucasianAccent
+  name: Кавказский акцент
+  description: Эу брат, пачэму ты нэ вибрал чэрту?
+  category: SpeechTraits
+  blacklist:
+    components:
+      - BorgChassis
+  components:
+  - type: CaucasianAccent
