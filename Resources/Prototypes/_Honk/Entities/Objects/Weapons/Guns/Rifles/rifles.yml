@@ -1,0 +1,49 @@
+- type: entity
+  name: АК-47
+  parent: WeaponRifleAk
+  id: WeaponRifleAk47
+  description: An iconic weapon of war. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+
+- type: entity
+  name: АК-47у
+  parent: WeaponRifleAk
+  id: WeaponRifleAk47y
+  description: An iconic weapon of war. Uses .30 rifle ammo.
+  components:
+  - type: Sprite
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47y.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47y.rsi
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Item
+    size: Large
+    shape:
+    - 0,0,2,1
+  - type: GunWieldBonus
+    minAngle: -12
+    maxAngle: -27
+  - type: Gun
+    minAngle: 17
+    maxAngle: 35
