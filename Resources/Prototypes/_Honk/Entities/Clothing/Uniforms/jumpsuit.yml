@@ -1,0 +1,10 @@
+﻿- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitMilitary
+  name: военная форма
+  description: Базовая военная форма
+  components:
+  - type: Sprite
+    sprite: _Honk/Clothing/Uniforms/Jumpsuit/military.rsi
+  - type: Clothing
+    sprite: _Honk/Clothing/Uniforms/Jumpsuit/military.rsi
