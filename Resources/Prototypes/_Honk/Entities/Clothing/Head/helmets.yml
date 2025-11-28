@@ -1,0 +1,13 @@
+﻿- type: entity
+  parent: [ ClothingHeadHelmetArmoredBase, BaseMajorContraband ]
+  id: ClothingHeadHelmetМilitary
+  name: Шлем военного
+  description: Каска башка голова не бобо
+  components:
+  - type: Sprite
+    sprite: _Honk/Clothing/Head/Helmets/military_helmet.rsi
+  - type: Clothing
+    sprite: _Honk/Clothing/Head/Helmets/military_helmet.rsi
+  - type: HideLayerClothing
+    layers:
+      Hair: HEAD
