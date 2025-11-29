@@ -13,6 +13,10 @@
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
     sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -33,6 +37,10 @@
       map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
     sprite: _Honk/Objects/Weapons/Guns/Rifles/ak47y.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
   - type: MagazineVisuals
     magState: mag
     steps: 1
@@ -45,5 +53,5 @@
     minAngle: -12
     maxAngle: -27
   - type: Gun
-    minAngle: 17
-    maxAngle: 35
+    minAngle: 25
+    maxAngle: 42
