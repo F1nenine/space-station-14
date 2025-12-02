@@ -8,3 +8,15 @@
     sprite: _Honk/Clothing/Head/Hats/turban.rsi
   - type: Clothing
     sprite: _Honk/Clothing/Head/Hats/turban.rsi
+
+
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadHatGeneral
+  name: фуражка генерала
+  description: Ты генерал
+  components:
+  - type: Sprite
+    sprite: _Honk/Clothing/Head/Hats/general.rsi
+  - type: Clothing
+    sprite: _Honk/Clothing/Head/Hats/general.rsi

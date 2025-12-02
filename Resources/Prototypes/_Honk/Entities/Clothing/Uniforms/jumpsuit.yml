@@ -12,6 +12,18 @@
 
 - type: entity
   parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGeneral
+  name: форма генерала
+  description: Ты генерал
+  components:
+  - type: Sprite
+    sprite: _Honk/Clothing/Uniforms/Jumpsuit/general.rsi
+  - type: Clothing
+    sprite: _Honk/Clothing/Uniforms/Jumpsuit/general.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitArab
   name: одежда местных
   description: Обычная одежда
@@ -20,3 +32,4 @@
     sprite: _Honk/Clothing/Uniforms/Jumpsuit/arab.rsi
   - type: Clothing
     sprite: _Honk/Clothing/Uniforms/Jumpsuit/arab.rsi
+
