@@ -1,4 +1,35 @@
 - type: entity
+  name: АК-74
+  parent: WeaponRifleAk
+  id: WeaponRifleAk74
+  description: Ак47, но лучше
+  components:
+  - type: Sprite
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak74.rsi
+    layers:
+    - state: base
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
+  - type: Clothing
+    sprite: _Honk/Objects/Weapons/Guns/Rifles/ak74.rsi
+    quickEquip: false
+    slots:
+    - Back
+    - suitStorage
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: GunWieldBonus
+    minAngle: -10
+    maxAngle: -20
+  - type: Gun
+    minAngle: 13
+    maxAngle: 25
+
+
+- type: entity
   name: АК-47
   parent: WeaponRifleAk
   id: WeaponRifleAk47
