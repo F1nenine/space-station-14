@@ -25,14 +25,11 @@ public sealed class CoverSystem : EntitySystem
 
         // Проверка дистанции
         var distance = (Transform(uid).WorldPosition - Transform(projectileUid).WorldPosition).Length();
-        if (distance > 0.81f) return;
+        if (distance < 0.6f) return;
 
         // Шанс блокировки
         if (!_random.Prob(cover.BlockChance))
             return;
-
-        // Удаление
-        QueueDel(projectileUid);
 
         if (!TryComp<ProjectileComponent>(projectileUid, out var projectile))
             return;
@@ -45,5 +42,8 @@ public sealed class CoverSystem : EntitySystem
 
         RaiseLocalEvent(ev);
         RaiseNetworkEvent(ev);
+
+        // Удаление
+        QueueDel(projectileUid);
     }
 }
