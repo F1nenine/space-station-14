@@ -1,0 +1,20 @@
+- type: department
+  id: Military
+  name: Военные
+  description: Ну и че тебе не понятно?
+  color: "#A46106"
+  weight: 100
+  roles:
+  - General
+  - Heavy
+  - Soldier
+
+
+- type: department
+  id: Mercenaries
+  name: Наёмники
+  description: Злые типо
+  color: "#A46106"
+  roles:
+  - RebelHeavy
+  - Militia
