@@ -1,0 +1,9 @@
+# Military
+- type: roleLoadout
+  id: JobSoldier
+  groups:
+  - SoldierHead
+  - SoldierMask
+  - SoldierJumpsuit
+  - SoldierOuterClothing
+  - SoldierBoots

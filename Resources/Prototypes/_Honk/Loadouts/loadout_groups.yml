@@ -1,0 +1,39 @@
+- type: loadoutGroup
+  id: SoldierJumpsuit
+  name: Солдат, комбенизон
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - SoldierJumpsuit
+
+- type: loadoutGroup
+  id: SoldierHead
+  name: Солдат, голова
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - HelmetМilitary
+
+- type: loadoutGroup
+  id: SoldierMask
+  name: Солдат, маска
+  minLimit: 0
+  maxLimit: 1
+  loadouts:
+  - Babaclava
+
+- type: loadoutGroup
+  id: SoldierOuterClothing
+  name: Солдат, верх
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - VestWebMilitary
+
+- type: loadoutGroup
+  id: SoldierBoots
+  name: Солдат, ботинки
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - BootsCombat
