@@ -1,0 +1,24 @@
+﻿- type: loadout
+  id: SoldierJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitMilitary
+
+- type: loadout
+  id: Babaclava
+  equipment:
+    mask: ClothingBalaclava
+
+- type: loadout
+  id: HelmetМilitary
+  equipment:
+    head: ClothingHeadHelmetМilitary
+
+- type: loadout
+  id: BootsCombat
+  equipment:
+    shoes: ClothingShoesBootsCombat
+
+- type: loadout
+  id: VestWebMilitary
+  equipment:
+    outerClothing: ClothingOuterVestWebMilitary
