@@ -391,10 +391,11 @@ namespace Content.Client.Lobby.UI
             PreferenceUnavailableButton.AddItem(
                 Loc.GetString("humanoid-profile-editor-preference-unavailable-stay-in-lobby-button"),
                 (int) PreferenceUnavailableMode.StayInLobby);
-            PreferenceUnavailableButton.AddItem(
+            // Потом мб добавить кнопку забросить в команду где меньше, сейчас лень делать.
+            /*PreferenceUnavailableButton.AddItem(
                 Loc.GetString("humanoid-profile-editor-preference-unavailable-spawn-as-overflow-button",
                               ("overflowJob", Loc.GetString(SharedGameTicker.FallbackOverflowJobName))),
-                (int) PreferenceUnavailableMode.SpawnAsOverflow);
+                (int) PreferenceUnavailableMode.SpawnAsOverflow);*/
 
             PreferenceUnavailableButton.OnItemSelected += args =>
             {
@@ -405,18 +406,18 @@ namespace Content.Client.Lobby.UI
 
             _jobCategories = new Dictionary<string, BoxContainer>();
 
-            RefreshAntags();
+            //RefreshAntags();
             RefreshJobs();
 
             #endregion Jobs
 
-            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
+            //TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-antags-tab"));
 
             RefreshTraits();
 
             #region Markings
 
-            TabContainer.SetTabTitle(4, Loc.GetString("humanoid-profile-editor-markings-tab"));
+            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-markings-tab"));
 
             Markings.OnMarkingAdded += OnMarkingChange;
             Markings.OnMarkingRemoved += OnMarkingChange;
@@ -494,7 +495,7 @@ namespace Content.Client.Lobby.UI
             TraitsList.RemoveAllChildren();
 
             var traits = _prototypeManager.EnumeratePrototypes<TraitPrototype>().OrderBy(t => Loc.GetString(t.Name)).ToList();
-            TabContainer.SetTabTitle(3, Loc.GetString("humanoid-profile-editor-traits-tab"));
+            TabContainer.SetTabTitle(2, Loc.GetString("humanoid-profile-editor-traits-tab"));
 
             if (traits.Count < 1)
             {
@@ -633,7 +634,7 @@ namespace Content.Client.Lobby.UI
 
         public void RefreshAntags()
         {
-            AntagList.RemoveAllChildren();
+            //AntagList.RemoveAllChildren();
             var items = new[]
             {
                 ("humanoid-profile-editor-antag-preference-yes-button", 0),
@@ -691,7 +692,7 @@ namespace Content.Client.Lobby.UI
                     Margin = new Thickness(3f, 0f, 0f, 0f),
                 });
 
-                AntagList.AddChild(antagContainer);
+                //AntagList.AddChild(antagContainer);
             }
         }
 
@@ -772,7 +773,7 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
 
-            RefreshAntags();
+            //RefreshAntags();
             RefreshJobs();
             RefreshLoadouts();
             RefreshSpecies();
